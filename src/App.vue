@@ -2,9 +2,22 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <h1 class="text-center">Carrusel en Vue.js con Bootstrap</h1>
+    <Carousel />
   </nav>
-  <router-view/>
+  
 </template>
+
+
+<script>
+import Carousel from "./components/Carrusel.vue"; // Asegúrate de que la ruta sea correcta
+
+export default {
+  components: {
+    Carousel,
+  },
+};
+</script> 
 
 <style>
 #app {
